@@ -4,9 +4,9 @@ default:
 build-job:
   stage: build
   script:
-    - ./gradlew assemble
+    - yarn build
 
-#test-job:
-#  stage: test
-#  script:
-#    - ./gradlew test
+test-job:
+  stage: test
+  script:
+    - ./gradlew test
