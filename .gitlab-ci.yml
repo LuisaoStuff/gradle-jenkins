@@ -1,8 +1,7 @@
 default:
-  image: node:latest
+  image: java:15-jdk
 
 build-job:
   stage: build
   script:
-    - export JAVA_HOME=/opt/jdk-15.0.2/
     - ./gradlew assemble
