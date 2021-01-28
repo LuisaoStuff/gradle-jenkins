@@ -1,13 +1,7 @@
 default:
-  image: node:latest
+  image: openjdk:15.0.2
 
 build-job:
   stage: build
   script:
-    - yarn
-    - yarn build
-
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploy"
+    - ./gradlew assemble
