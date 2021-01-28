@@ -4,5 +4,5 @@ default:
 build-job:
   stage: build
   script:
-    - yarn
+    - EXPORT JAVA_HOME=/opt/jdk-15.0.2/
     - ./gradlew assemble
