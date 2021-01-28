@@ -5,7 +5,7 @@ build-job:
   stage: build
   script:
     - ./gradlew assemble
-  artifact:
+  artifacts:
     when: always
     paths:
       - build/libs/*.jar
