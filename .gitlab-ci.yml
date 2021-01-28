@@ -5,6 +5,10 @@ build-job:
   stage: build
   script:
     - ./gradlew assemble
+  artifact:
+    when: always
+    paths:
+      - build/libs/*.jar
 
 test-job:
   stage: test
