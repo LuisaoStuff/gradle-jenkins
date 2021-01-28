@@ -6,7 +6,7 @@ build-job:
   script:
     - ./gradlew assemble
 
-test-job:
-  stage: test
-  script:
-    - ./gradlew test
+#test-job:
+#  stage: test
+#  script:
+#    - ./gradlew test
