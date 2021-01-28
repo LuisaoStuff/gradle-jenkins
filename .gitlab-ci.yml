@@ -1,5 +1,5 @@
 default:
-  image: java:15-jdk
+  image: openjdk:15.0.2
 
 build-job:
   stage: build
